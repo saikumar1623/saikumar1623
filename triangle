@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+
+inline float triangle_area(float base, float height)
+
+{
+
+float area;
+
+area = (0.5 * base * height);
+
+return area;
+
+}
+
+ 
+
+int main(void)
+
+{
+
+float b, h, a;
+
+b = 2;
+
+h = 8;
+
+
+a = triangle_area(b, h);
+
+cout<<"Area = (0.5*base*height)"<<endl;
+
+cout<<"where, base = 2, height = 8"<<endl;
+
+cout<<"\nArea = "<<a<<endl;
+
+ 
+
+return 0;
+
+}
