@@ -1,0 +1,21 @@
+include<iostream>
+ using namespace std;
+
+ int sum(int a, int b)
+ {
+    return a+b;
+ }
+ int sum (int a, int b, int c)
+ {
+    return a+b+c;
+ }
+ int main()
+ {
+int a,b,c;
+	{
+	cout <<"enter value of a b c=";
+	cin>>a>>b>>c;
+	cout <<"the value of addition using 2 parameters: "<<sum(a,b)<<endl;
+	cout <<"the value of addution using 3 parameters:"<<sum(a,b,c)<<endl;
+	}
+}
