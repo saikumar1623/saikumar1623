@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+void lower_case(string str)
+{
+	for(int i=0;str[i]!='\0';i++)
+	{
+	if (str[i]>='A'&& str[i]<='Z')   
+	str[i]=str[i]+32;         
+	}
+	cout<<"\nthe string in lower case: "<<str;
+}
+void upper_case(string str)
+{
+	for(int i=0;str[i]!='\0';i++)
+	{
+	if (str[i]>='a'&&str[i]<='z')
+	str[i]= str[i]-32;
+	}
+	cout<<"\nthe string in upper case: "<<str;
+}
+int main()
+{
+	string str;
+    cout<<"enter the string ";
+    getline(cin,str);
+    lower_case(str);      
+	upper_case(str);
+	return 0;
+}
